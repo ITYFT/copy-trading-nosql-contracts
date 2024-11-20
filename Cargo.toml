@@ -1,0 +1,14 @@
+[package]
+name = "copy-trading-nosql-contracts"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+service-sdk = { tag = "0.3.0", git = "https://github.com/MyJetTools/service-sdk.git", features = [
+    "macros",
+    "my-nosql-sdk",
+] }
+
+serde = { version = "*", features = ["derive"] }
+chrono = { version = "*", features = ["serde"] }
+serde_json = { version = "*" }
